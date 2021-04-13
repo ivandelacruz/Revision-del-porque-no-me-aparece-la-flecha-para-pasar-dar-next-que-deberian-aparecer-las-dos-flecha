@@ -1,0 +1,131 @@
+/* Patrones Globales del CSS */
+
+h6, aside#menu-movil nav a {font-family: 'Permanent Marker', cursive;}  
+h1, h2, h3, h4, h5 { font-family: 'Barlow', sans-serif;}
+p, a, button, form, input, select, option, textarea, em, span, strong, div { font-family: 'Roboto', sans-serif;}
+
+body { margin: o !important;}
+
+header, main, footer, aside, section, article, figure, nav, div  { display: block; }
+
+h1, h2, h3, h4, h5, h6, p, figure  { margin: 0; }
+
+
+
+/* Maquetacion, estilo y acabdos en CSS */
+
+
+/* Header */
+header {width: 100%; height: 80px; margin: 0; float: none; position: fixed; top: 0; left: 0; z-index: 99990; background: #f50; }
+
+
+
+/* Main */
+main { width: 100%; height: auto; margin: 80px auto 0 auto ; float: none; position: relative;}
+ 
+
+/* Video desde youtube  */
+ main section#video-yotube { width: 100%; height: auto ; margin: 0 auto ; float: none; position: relative; }
+ main section#video-yotube iframe {width: 100%; height: 88vh; margin: 0 auto ; float: none; position: relative; }
+   
+ 
+ /* Mapa Google Maps */
+ main section#mapa-googlemaps {width: 100%;height: auto; margin:  0 auto ; float: none; position: relative; }
+ main section#mapa-googlemaps iframe {width: 100%; height: 88vh; margin: 0 auto ; float: none; position: relative; }
+
+
+ /* Banner video HTML5 */
+ main section#banner-video-html5 { width: 100%; height:  auto; margin: 0 auto ; float: none; position: relative;} 
+ main section#banner-video-html5 video {width: 100%; height: 88vh; margin: 0 auto ; float: none; position: relative; background: #000;} 
+ 
+          
+ /* Banner video HTML5 Loop Muted */
+main section#banner-video-html5-loop-muted {width: 100%; height: 88vh; margin: 0 auto ; float: none; position: relative; overflow: hidden; }
+
+main section#banner-video-html5-loop-muted div#capa-contenido  { width: 100%; height: 88vh; margin: 0 auto ; float: none; position: absolute; top: 0; left: 0; z-index: 3 ; } 
+main section#banner-video-html5-loop-muted div#capa-contenido h1 { font-size:  2em; line-height: 1em; text-align: center; color: #fff; letter-spacing: 0.15em; padding: 41vh 0;}
+
+main section#banner-video-html5-loop-muted div#capa-color-video { width: 100%; height: 88vh; margin: 0 auto ; float: none; position: absolute; top: 0; left: 0; z-index: 2 ; background:rgba(0, 0, 0, 0.7) ; }        
+
+main section#banner-video-html5-loop-muted video { width: 100%; height: 88vh; margin: 0 auto ; float: none; position: absolute; top: 0; left: 0; z-index: 1 ; display: block; background: #000; transform: scale(1.3); }
+main section#banner-video-html5-loop-muted video source { width: 100%; height: auto; margin: 0 auto ; float: none; position: relative; display: block; }
+
+/* Slide con Imagenes */
+main section#slide-imagenes { width: 100%; height: auto; margin: 0 auto ; float: none; position: relative; }
+main section#slide-imagenes article.slick-banner { width: 100%; height: 88vh; margin: 0 auto ; float: none; position: relative; overflow: hidden; }
+
+main section#slide-imagenes article.slick-banner figure { width: 100%; height: 88vh; margin: 0; float: left; position: relative; } 
+main section#slide-imagenes article.slick-banner figure#slide-01 { background: url('../img/slide-01.jpg') no-repeat top center; background-size: cover; }
+main section#slide-imagenes article.slick-banner figure#slide-02 { background: url('../img/slide-02.jpg') no-repeat top center; background-size: cover;  }
+main section#slide-imagenes article.slick-banner figure#slide-03 { background: url('../img/slide-03.jpg') no-repeat top center; background-size: cover; }
+
+main section#slide-imagenes article.slick-banner figure div.contenedor { width: 70%; height: auto; display: block; margin: 31vh auto; float: none; position: relative; }
+main section#slide-imagenes article.slick-banner figure div.contenedor h3 { font-size: 2.5em; line-height: 1em; text-align: left; color: #fff; padding: 0 0 15px; }
+main section#slide-imagenes article.slick-banner figure div.contenedor p {  font-size: 1.1em; line-height: 1.3em; text-align: left; color: #fff; font-weight: 300; letter-spacing: 0.035em; padding: 0 0 15px; }
+main section#slide-imagenes article.slick-banner figure div.contenedor a { border: solid 1px #fff; width: 80px; height: auto; display: block; margin: 0; float: none; position: relative; font-size: 1.1em; line-height: 1em; text-align: center; color: #fff; padding: 13px 20px; letter-spacing: 0.035em; text-decoration: none; border-radius: 5px; background: #f50; transition: all 0.3s ease-in; }
+main section#slide-imagenes article.slick-banner figure div.contenedor a:hover { color: #f50;  background: #fff ; }
+
+                    
+.slick-prev { left: 25px !important; z-index: 10 !important; }
+.slick-next { right: 25px !important ; z-index: 11 !important; }
+
+
+
+/* FOOTER */
+footer {width: 100%; height: 200px; margin: 0; float: none; position: relative; background: url('../img/') no-repeat top center #333; background-size: cover; }
+
+
+
+
+/* Zona responsive web desing - media Queries  */
+
+/* Rango de Tablets: (maximo 1199px - minimo 500px) */
+@media only screen and (max-width: 1199px){ 
+    header { height: 80 px; box-shadow: 0 3px 5px rgb(0, 0, 0 / 15%); }
+    
+    /* Video desde youtube  */
+    main section#video-yotube iframe { height: 40vh;  }
+
+
+    /* Mapa Google Maps */
+    main section#mapa-googlemaps iframe { height: 40vh;  }
+
+
+    /* video HTML5 */
+    main section#banner-video-html5 video { height: 40vh; } 
+
+
+    /* Banner video HTML5 Loop Muted */
+    main section#banner-video-html5-loop-muted { height: 80vh; }
+    main section#banner-video-html5-loop-muted div#capa-contenido  {  height: 80vh; } 
+    main section#banner-video-html5-loop-muted div#capa-contenido h1 { font-size: 1.7em; padding: 17vh 50px;}
+    main section#banner-video-html5-loop-muted div#capa-color-video { height: 80vh; }        
+    main section#banner-video-html5-loop-muted video { height: 80vh; transform: scale(2.9) }
+
+
+    /* Slide con Imagenes */
+    main section#slide-imagenes article.slick-banner figure {  height: 60vh; }
+    main section#slide-imagenes article.slick-banner figure {  height: 60vh; }
+    main section#slide-imagenes article.slick-banner figure div.contenedor { width: 60%; margin: 11vh auto; }
+    main section#slide-imagenes article.slick-banner figure div.contenedor h3 { font-size: 2em; }
+
+}
+
+/* Rango de smarthphones: (Maximo 499px - minimo 400px) */
+@media only screen and (max-width: 499px){  
+    main section#banner-video-html5-loop-muted video { transform: scale(1.5) }
+}
+
+/* Rango de smarthphones Pequeños: (Maximo 399px - minimo 340px) */
+@media only screen and (max-width: 399px){  
+
+}
+
+
+
+
+
+
+
+
+
